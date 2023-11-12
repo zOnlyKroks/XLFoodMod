@@ -2,25 +2,29 @@
   "schemaVersion": 1,
   "id": "xlfoodmod",
   "version": "${version}",
-
   "name": "XLFoodMod",
   "description": "",
   "authors": [],
-  "contact": {},
-
+  "contact": {
+    "repo": "https://github.com/finnr/XLFoodMod"
+  },
   "license": "AGPL-3.0",
   "icon": "assets/xlfoodmod/icon.png",
-
   "environment": "*",
-  "entrypoints": {},
-
-      "mixins": [
-        "xlfoodmod.mixins.json"
-      ],
-
+  "entrypoints": {
+    "client": [
+      "de.zonlykroks.xlfoodmod.client.XLFoodModClient"
+    ],
+    "main": [
+      "de.zonlykroks.xlfoodmod.XLFoodMod"
+    ]
+  },
+  "mixins": [
+    "xlfoodmod.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
+    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }

@@ -3,11 +3,11 @@ package de.zonlykroks.xlfoodmod;
 import net.fabricmc.api.ModInitializer;
 
 public class XLFoodMod implements ModInitializer {
-    /**
-     * Runs the mod initializer.
-     */
+
+    public static final String MODID = "xlfoodmod";
+
     @Override
     public void onInitialize() {
-
+        new CropBlocks();
     }
 }
